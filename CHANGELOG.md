@@ -1,5 +1,11 @@
 # Endringslogg
 
+## [1.2.0] - 2026-09-06
+
+- Standardiserte klikkbar statussjekk for web, mobil og skrivebord.
+- Nye prosjekter får automatisk veiledning for personvernvennlig diagnostikk.
+- Dokumenterte grønne, gule og røde statusnivåer.
+
 Alle vesentlige endringer dokumenteres her. Formatet følger Keep a Changelog og versjonene følger SemVer.
 
 ## [1.1.0] - 2026-09-06
