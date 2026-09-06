@@ -1,0 +1,31 @@
+name: Feilrapport
+description: Meld en feil som kan gjenskapes
+title: "[Feil] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Hva skjedde?
+      description: Beskriv feilen kort og konkret.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Slik kan feilen gjenskapes
+      placeholder: "1. Åpne ...\n2. Trykk ...\n3. Se feilen"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versjon
+      placeholder: "For eksempel 1.2.3"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Plattform
+      options: [Web, Android, iPhone/iPad, Windows, macOS, Linux, Annet]
+    validations:
+      required: true
