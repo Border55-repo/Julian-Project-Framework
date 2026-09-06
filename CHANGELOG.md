@@ -1,5 +1,11 @@
 # Endringslogg
 
+## [1.3.1] - 2026-09-06
+
+- Registrerte KlarX i prosjektoversikten med offentlig app- og statuslenke.
+- La til et maskinlesbart prosjektregister som kontrollsentre kan lese uten et GitHub-token i nettleseren.
+- Dokumenterte valgfrie repo-, app- og statusfelt i prosjektkonfigurasjonen.
+
 ## [1.3.0] - 2026-09-06
 
 - Gjorde URKH-blålystemaet til fast designbase for prosjekter relatert til Røde Kors og førstehjelp.

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-06",
+  "projects": [
+    {
+      "name": "KlarX",
+      "platform": "Web og PWA",
+      "status": "implemented",
+      "repository": "https://github.com/Border55-repo/KlarX",
+      "site": "https://border55-repo.github.io/KlarX/",
+      "statusUrl": "https://border55-repo.github.io/KlarX/status.json"
+    },
+    {
+      "name": "Korpsbrev",
+      "platform": "Lokal webapp",
+      "status": "implemented",
+      "repository": "https://github.com/Border55-repo/Korpsbrev",
+      "site": "https://border55-repo.github.io/Korpsbrev/"
+    },
+    {
+      "name": "NM-help",
+      "platform": "Web og PWA",
+      "status": "implemented",
+      "repository": "https://github.com/Border55-repo/NM-help"
+    },
+    {
+      "name": "URKH-HOVED",
+      "platform": "Web, PWA, Android og iOS-kilde",
+      "status": "implemented",
+      "repository": "https://github.com/Border55-repo/URKH-HOVED",
+      "site": "https://border55-repo.github.io/URKH-HOVED/"
+    }
+  ]
+}
