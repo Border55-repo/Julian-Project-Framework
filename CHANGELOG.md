@@ -2,6 +2,19 @@
 
 Alle vesentlige endringer dokumenteres her. Formatet følger Keep a Changelog og versjonene følger SemVer.
 
+## [1.1.0] - 2026-09-06
+
+### Lagt til
+
+- Automatisk månedlig kontroll av npm-, Gradle- og GitHub Actions-avhengigheter.
+- Felles kategorier for automatisk genererte release-notater.
+- Prosjektregister som viser innføringsstatus for alle repositorier.
+- Avbryting av foreldede CI-kjøringer når en nyere commit sendes til samme branch.
+
+### Endret
+
+- GitHub Actions er oppdatert til støttede hovedversjoner som bruker moderne Node-runtime.
+
 ## [1.0.0] - 2026-09-05
 
 ### Lagt til

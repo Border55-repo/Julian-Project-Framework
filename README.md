@@ -4,8 +4,6 @@ Et gjenbrukbart rammeverk for web-, mobil- og skrivebordsprosjekter.
 
 ## Mål
 
-Rammeverket gir alle prosjekter samme grunnmur:
-
 - sikker og lokal-først datalagring
 - automatisk testing og bygging
 - semantisk versjonering
@@ -24,14 +22,8 @@ node scripts/create-project.mjs mitt-prosjekt --target desktop
 node scripts/create-project.mjs mitt-prosjekt --target all
 ```
 
-Kjør deretter kommandoene som skriptet viser.
+Se [docs/ADOPTION.md](docs/ADOPTION.md) for eksisterende prosjekter.
 
-## Eksisterende prosjekt
-
-Se [docs/ADOPTION.md](docs/ADOPTION.md). Rammeverket innføres via en egen branch og pull request, med tilpasset CI for prosjektets faktiske teknologi.
-
-## Versjon
-
-Første stabile rammeverksversjon: **1.0.0**.
+Gjeldende versjon: **1.1.0**.
 
 Laget og vedlikeholdt for Julian Nordlis prosjekter.
