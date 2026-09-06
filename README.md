@@ -12,6 +12,7 @@ Et gjenbrukbart rammeverk for web-, mobil- og skrivebordsprosjekter.
 - tydelig prosjektstatus, klikkbar statussjekk og dokumentasjon
 - egne branches og pull requests for endringer
 - støtte for web, PWA, Android, iOS og skrivebord
+- felles URKH-blålystema for alle Røde Kors- og førstehjelpsprosjekter
 
 ## Nytt prosjekt
 

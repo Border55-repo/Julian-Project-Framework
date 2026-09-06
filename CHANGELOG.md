@@ -1,5 +1,10 @@
 # Endringslogg
 
+## [1.3.0] - 2026-09-06
+
+- Gjorde URKH-blålystemaet til fast designbase for prosjekter relatert til Røde Kors og førstehjelp.
+- Dokumenterte eksakte farger, komponenter, responsiv oppbygning og temaadferd.
+
 ## [1.2.0] - 2026-09-06
 
 - Standardiserte klikkbar statussjekk for web, mobil og skrivebord.
