@@ -1,34 +1,52 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updatedAt": "2026-09-06",
+  "policy": {
+    "publicRegistry": true,
+    "privateProjects": "Kontrollpanelets private register",
+    "automation": "Daglig kontroll; pull request kreves for kodeendringer"
+  },
   "projects": [
     {
+      "id": "klarx",
       "name": "KlarX",
+      "category": "first-aid",
       "platform": "Web og PWA",
       "status": "implemented",
       "repository": "https://github.com/Border55-repo/KlarX",
       "site": "https://border55-repo.github.io/KlarX/",
-      "statusUrl": "https://border55-repo.github.io/KlarX/status.json"
+      "statusUrl": "https://border55-repo.github.io/KlarX/status.json",
+      "automationPolicy": "technical-pr-only"
     },
     {
+      "id": "korpsbrev",
       "name": "Korpsbrev",
+      "category": "productivity",
       "platform": "Lokal webapp",
       "status": "implemented",
       "repository": "https://github.com/Border55-repo/Korpsbrev",
-      "site": "https://border55-repo.github.io/Korpsbrev/"
+      "site": "https://border55-repo.github.io/Korpsbrev/",
+      "automationPolicy": "technical-pr-only"
     },
     {
+      "id": "nm-help",
       "name": "NM-help",
+      "category": "game-helper",
       "platform": "Web og PWA",
       "status": "implemented",
-      "repository": "https://github.com/Border55-repo/NM-help"
+      "repository": "https://github.com/Border55-repo/NM-help",
+      "site": "https://border55-repo.github.io/NM-help/",
+      "automationPolicy": "technical-pr-only"
     },
     {
+      "id": "urkh-hoved",
       "name": "URKH-HOVED",
+      "category": "red-cross",
       "platform": "Web, PWA, Android og iOS-kilde",
       "status": "implemented",
       "repository": "https://github.com/Border55-repo/URKH-HOVED",
-      "site": "https://border55-repo.github.io/URKH-HOVED/"
+      "site": "https://border55-repo.github.io/URKH-HOVED/",
+      "automationPolicy": "approval-required-for-releases"
     }
   ]
 }

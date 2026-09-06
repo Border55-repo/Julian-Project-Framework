@@ -1,6 +1,6 @@
 import { access, readFile } from "node:fs/promises";
 
-const required = ["README.md", "VERSION", "CHANGELOG.md", "FRAMEWORK.md", "SECURITY.md", "package.json"];
+const required = ["README.md", "VERSION", "CHANGELOG.md", "FRAMEWORK.md", "SECURITY.md", "package.json", "docs/projects.json"];
 const missing = [];
 
 for (const path of required) {
@@ -30,4 +30,19 @@ if (!changelog.includes(`[${version}]`)) {
   process.exit(1);
 }
 
-console.log(`Prosjektstandard godkjent for versjon ${version}.`);
+const registry = JSON.parse(await readFile("docs/projects.json", "utf8"));
+if (registry.schemaVersion !== 2 || !Array.isArray(registry.projects) || registry.projects.length === 0) {
+  console.error("docs/projects.json må bruke registerskjema 2 og inneholde prosjekter.");
+  process.exit(1);
+}
+const ids = new Set();
+for (const project of registry.projects) {
+  if (!project.id || ids.has(project.id)) throw new Error("Prosjekt-ID-er må være unike.");
+  ids.add(project.id);
+  if (!project.name || !project.category || !project.automationPolicy) throw new Error(`Ufullstendig prosjektdefinisjon: ${project.id}`);
+  for (const key of ["repository", "site", "statusUrl"]) {
+    if (project[key] && !String(project[key]).startsWith("https://")) throw new Error(`${project.id} har ugyldig ${key}.`);
+  }
+}
+
+console.log(`Prosjektstandard godkjent for versjon ${version} med ${registry.projects.length} offentlige prosjekter.`);

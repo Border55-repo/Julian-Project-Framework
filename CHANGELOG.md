@@ -1,5 +1,11 @@
 # Endringslogg
 
+## [1.4.0] - 2026-09-06
+
+- Oppgraderer prosjektregisteret til skjema 2 med stabile ID-er, prosjektkategori og automatiseringspolicy.
+- Legger til offentlig nettadresse for NM-help og dokumenterer at private prosjekter føres i kontrollpanelets private register.
+- Validerer registerstruktur, unike ID-er og HTTPS-adresser automatisk.
+
 ## [1.3.1] - 2026-09-06
 
 - Registrerte KlarX i prosjektoversikten med offentlig app- og statuslenke.
@@ -17,27 +23,12 @@
 - Nye prosjekter får automatisk veiledning for personvernvennlig diagnostikk.
 - Dokumenterte grønne, gule og røde statusnivåer.
 
-Alle vesentlige endringer dokumenteres her. Formatet følger Keep a Changelog og versjonene følger SemVer.
-
 ## [1.1.0] - 2026-09-06
 
-### Lagt til
-
-- Automatisk månedlig kontroll av npm-, Gradle- og GitHub Actions-avhengigheter.
-- Felles kategorier for automatisk genererte release-notater.
-- Prosjektregister som viser innføringsstatus for alle repositorier.
-- Avbryting av foreldede CI-kjøringer når en nyere commit sendes til samme branch.
-
-### Endret
-
-- GitHub Actions er oppdatert til støttede hovedversjoner som bruker moderne Node-runtime.
+- La til automatisk avhengighetskontroll, release-notater, prosjektregister og avbryting av foreldede CI-kjøringer.
 
 ## [1.0.0] - 2026-09-05
 
-### Lagt til
-
 - Første stabile rammeverk for web-, mobil- og skrivebordsprosjekter.
-- Prosjektgenerator med måltypene `web`, `mobile`, `desktop` og `all`.
-- Automatisk kontroll av prosjektstruktur, versjon og release-notater.
-- GitHub Actions for kvalitetssikring og releases.
-- Felles krav til sikkerhet, personvern, lagring og pull requests.
+
+Alle vesentlige endringer dokumenteres her. Formatet følger Keep a Changelog og versjonene følger SemVer.
