@@ -13,6 +13,7 @@
 9. Hemmeligheter skal ligge i miljøvariabler eller GitHub Secrets, aldri i kildekoden.
 10. Alle tredjepartsavhengigheter skal ha kjent lisens og låst versjon gjennom en lockfil når pakkesystemet støtter det.
 11. Alle brukerrettede apper skal ha en klikkbar statussjekk som skiller lokal funksjon, nettverk, appressurser og eksterne tjenester. Sjekken skal ikke laste opp brukerinnhold.
+12. Prosjekter relatert til Røde Kors eller førstehjelp skal bruke det felles URKH-blålystemaet i `docs/RED-CROSS-FIRST-AID-THEME.md` som visuell base.
 
 ## Ferdigdefinisjon
 
