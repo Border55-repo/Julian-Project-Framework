@@ -12,3 +12,14 @@ test("pakkens versjon samsvarer med VERSION", async () => {
   const pkg = JSON.parse(await readFile("package.json", "utf8"));
   assert.equal(pkg.version, version);
 });
+
+test("prosjektregisteret har unike ID-er og automatiseringspolicy", async () => {
+  const registry = JSON.parse(await readFile("docs/projects.json", "utf8"));
+  assert.equal(registry.schemaVersion, 2);
+  assert.equal(new Set(registry.projects.map((project) => project.id)).size, registry.projects.length);
+  registry.projects.forEach((project) => {
+    assert.ok(project.category);
+    assert.ok(project.automationPolicy);
+    assert.match(project.repository, /^https:\/\/github\.com\//);
+  });
+});
