@@ -3,6 +3,9 @@
   "displayName": "Mitt prosjekt",
   "target": "web",
   "version": "0.1.0",
+  "repository": "https://github.com/eier/mitt-prosjekt",
+  "siteUrl": "https://eier.github.io/mitt-prosjekt/",
+  "statusUrl": "https://eier.github.io/mitt-prosjekt/status.json",
   "dataPolicy": "local-first",
   "releaseNotifications": true,
   "autoRefreshSeconds": 15
