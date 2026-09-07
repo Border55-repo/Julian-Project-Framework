@@ -1,5 +1,9 @@
 # Endringslogg
 
+## [Uutgitt]
+
+- La til en felles, dokumentert vedlikeholdsmodus med offentlig statuskontrakt og sikker fail-open-klient.
+
 ## [1.4.0] - 2026-09-06
 
 - Oppgraderer prosjektregisteret til skjema 2 med stabile ID-er, prosjektkategori og automatiseringspolicy.
