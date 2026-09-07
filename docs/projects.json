@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-09-06",
+  "updatedAt": "2026-09-07",
   "policy": {
     "publicRegistry": true,
     "privateProjects": "Kontrollpanelets private register",
@@ -47,6 +47,17 @@
       "repository": "https://github.com/Border55-repo/URKH-HOVED",
       "site": "https://border55-repo.github.io/URKH-HOVED/",
       "automationPolicy": "approval-required-for-releases"
+    },
+    {
+      "id": "maintenance-service",
+      "name": "Julian Project Maintenance",
+      "category": "infrastructure",
+      "platform": "Offentlig status-API",
+      "status": "implemented",
+      "repository": "https://github.com/Border55-repo/Julian-Project-Framework/tree/main/services/maintenance",
+      "site": "https://julian-project-maintenance.juliannordli.chatgpt.site/",
+      "statusUrl": "https://julian-project-maintenance.juliannordli.chatgpt.site/api/maintenance",
+      "automationPolicy": "control-center-only"
     }
   ]
 }
